@@ -4,6 +4,14 @@ This project builds a classification and anomaly detection pipeline to identify 
 
 Credit card fraud detection is notoriously challenging because fraud cases represent a tiny fraction (typically less than 0.5%) of overall transactions. This project demonstrates how to handle extreme class imbalance and build robust models for this domain.
 
+## Dataset
+The dataset utilized is the public Kaggle [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset.
+
+To run the pipeline with the real data:
+1. Download the `creditcard.csv` dataset from the link above.
+2. Update the `DATA_PATH` variable in `frauddetection.py` to point to the file path on your computer.
+*(Note: If the dataset file is not found at the specified path, the script will automatically generate synthetic imbalanced transaction data for testing purposes).*
+
 ## Methodology
 To address the class imbalance, this pipeline:
 - Scales PCA features ($V_1$ through $V_{28}$), transaction time, and amount.
